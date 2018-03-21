@@ -3,8 +3,8 @@
 This library provides functions for generating Cayenne LPP compatible payload.
 For example, the generated payloads can be used with LoRaWAN devices.
 
-This library is adapted from [the C++ version from
-[MBED](https://developer.mbed.org/teams/myDevicesIoT/code/Cayenne-LPP/).
+This library is adapted from
+[the C++ version from MBED](https://developer.mbed.org/teams/myDevicesIoT/code/Cayenne-LPP/).
 
 See [the Cayenne LPP documentation](https://github.com/myDevicesIoT/cayenne-docs/blob/master/docs/LORA.md)
 for details on the payload format.
