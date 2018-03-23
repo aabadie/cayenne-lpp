@@ -1,0 +1,15 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/buildpack-deps
+    steps:
+      - checkout
+      - run:
+          command: make
+      - run:
+          command: make doc
+      - store_artifacts:
+          path: doc/html
+          destination: doc
