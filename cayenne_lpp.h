@@ -208,7 +208,8 @@ void cayenne_lpp_add_gyrometer(cayenne_lpp_t *lpp, uint8_t channel,
  * @param[in] longitude    the longitude
  * @param[in] meters       the altitude in meters
  */
-void cayenne_lpp_add_gps(cayenne_lpp_t *lpp, uint8_t channel, float latitude, float longitude, float meters);
+void cayenne_lpp_add_gps(cayenne_lpp_t *lpp, uint8_t channel,
+                         float latitude, float longitude, float meters);
 
 #ifdef __cplusplus
 }
