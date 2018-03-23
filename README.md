@@ -1,5 +1,7 @@
 ## A Cayenne LPP library written in C
 
+[![CircleCI](https://circleci.com/gh/aabadie/cayenne-lpp/tree/master.svg?style=svg)](https://circleci.com/gh/aabadie/cayenne-lpp/tree/master)
+
 This library provides functions for generating Cayenne LPP compatible payload.
 For example, the generated payloads can be used with LoRaWAN devices.
 
