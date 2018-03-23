@@ -9,6 +9,8 @@ jobs:
       - run:
           command: make
       - run:
+          command: tests/test
+      - run:
           command: make doc
       - store_artifacts:
           path: doc/html
