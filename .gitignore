@@ -1,0 +1,7 @@
+*.o
+test
+
+.vscode/
+
+html/
+latex/
