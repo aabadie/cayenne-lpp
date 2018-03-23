@@ -29,6 +29,10 @@ Simply use `make`:
     ----------------------------------
     Empty buffer:
 
+## Reference API
+
+Read the reference API here: https://aabadie.github.io/cayenne-lpp
+
 ## License
 
 The library is licensed under LGPLv2.1.
