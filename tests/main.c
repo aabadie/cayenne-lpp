@@ -14,17 +14,14 @@
 
 #include <stdio.h>
 
-#include "cayenne-lpp.h"
+#include "cayenne_lpp.h"
 
 static cayenne_lpp_t lpp;
 
 static void _print_buffer(void)
 {
     for (uint8_t i = 0; i < lpp.cursor; ++i) {
-        printf("%02X", lpp.buffer[i]);
-        if (i < lpp.cursor - 1) {
-            printf("-");
-        }
+        printf("%02X ", lpp.buffer[i]);
     }
     puts("");
 }

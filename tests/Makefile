@@ -4,13 +4,13 @@ CFLAGS += -I../
 
 all: test
 
-test: main.o cayenne-lpp.o
-	gcc -o test main.o cayenne-lpp.o
+test: main.o cayenne_lpp.o
+	gcc -o test main.o cayenne_lpp.o
 
 main.o: main.c
 	gcc $(CFLAGS) -c $< -o $@
 
-cayenne-lpp.o: ../cayenne-lpp.c
+cayenne_lpp.o: ../cayenne_lpp.c
 	gcc $(CFLAGS) -c $< -o $@
 
 clean:

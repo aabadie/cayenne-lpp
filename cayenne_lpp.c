@@ -16,7 +16,7 @@
 #include <assert.h>
 #include <string.h>
 
-#include "cayenne-lpp.h"
+#include "cayenne_lpp.h"
 
 void cayenne_lpp_reset(cayenne_lpp_t *lpp)
 {
@@ -24,7 +24,8 @@ void cayenne_lpp_reset(cayenne_lpp_t *lpp)
     lpp->cursor = 0;
 }
 
-void cayenne_lpp_add_digital_input(cayenne_lpp_t *lpp, uint8_t channel, uint8_t value)
+void cayenne_lpp_add_digital_input(cayenne_lpp_t *lpp, uint8_t channel,
+                                   uint8_t value)
 {
     assert((lpp->cursor + CAYENNE_LPP_DIGITAL_INPUT_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -33,7 +34,8 @@ void cayenne_lpp_add_digital_input(cayenne_lpp_t *lpp, uint8_t channel, uint8_t 
     lpp->buffer[lpp->cursor++] = value;
 }
 
-void cayenne_lpp_add_digital_output(cayenne_lpp_t *lpp, uint8_t channel, uint8_t value)
+void cayenne_lpp_add_digital_output(cayenne_lpp_t *lpp, uint8_t channel,
+                                    uint8_t value)
 {
     assert((lpp->cursor + CAYENNE_LPP_DIGITAL_OUTPUT_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -42,7 +44,8 @@ void cayenne_lpp_add_digital_output(cayenne_lpp_t *lpp, uint8_t channel, uint8_t
     lpp->buffer[lpp->cursor++] = value;
 }
 
-void cayenne_lpp_add_analog_input(cayenne_lpp_t *lpp, uint8_t channel, float value)
+void cayenne_lpp_add_analog_input(cayenne_lpp_t *lpp, uint8_t channel,
+                                  float value)
 {
     assert((lpp->cursor + CAYENNE_LPP_ANALOG_INPUT_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -53,7 +56,8 @@ void cayenne_lpp_add_analog_input(cayenne_lpp_t *lpp, uint8_t channel, float val
     lpp->buffer[lpp->cursor++] = val;
 }
 
-void cayenne_lpp_add_analog_output(cayenne_lpp_t *lpp, uint8_t channel, float value)
+void cayenne_lpp_add_analog_output(cayenne_lpp_t *lpp, uint8_t channel,
+                                   float value)
 {
     assert((lpp->cursor + CAYENNE_LPP_ANALOG_OUTPUT_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -64,7 +68,8 @@ void cayenne_lpp_add_analog_output(cayenne_lpp_t *lpp, uint8_t channel, float va
     lpp->buffer[lpp->cursor++] = val;
 }
 
-void cayenne_lpp_add_luminosity(cayenne_lpp_t *lpp, uint8_t channel, uint16_t lux)
+void cayenne_lpp_add_luminosity(cayenne_lpp_t *lpp, uint8_t channel,
+                                uint16_t lux)
 {
     assert((lpp->cursor + CAYENNE_LPP_LUMINOSITY_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -74,7 +79,8 @@ void cayenne_lpp_add_luminosity(cayenne_lpp_t *lpp, uint8_t channel, uint16_t lu
     lpp->buffer[lpp->cursor++] = lux;
 }
 
-void cayenne_lpp_add_presence(cayenne_lpp_t *lpp, uint8_t channel, uint8_t value)
+void cayenne_lpp_add_presence(cayenne_lpp_t *lpp, uint8_t channel,
+                              uint8_t value)
 {
     assert((lpp->cursor + CAYENNE_LPP_PRESENCE_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -83,7 +89,8 @@ void cayenne_lpp_add_presence(cayenne_lpp_t *lpp, uint8_t channel, uint8_t value
     lpp->buffer[lpp->cursor++] = value;
 }
 
-void cayenne_lpp_add_temperature(cayenne_lpp_t *lpp, uint8_t channel, float celsius)
+void cayenne_lpp_add_temperature(cayenne_lpp_t *lpp, uint8_t channel,
+                                 float celsius)
 {
     assert((lpp->cursor + CAYENNE_LPP_TEMPERATURE_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -94,7 +101,8 @@ void cayenne_lpp_add_temperature(cayenne_lpp_t *lpp, uint8_t channel, float cels
     lpp->buffer[lpp->cursor++] = val;
 }
 
-void cayenne_lpp_add_relative_humidity(cayenne_lpp_t *lpp, uint8_t channel, float rh)
+void cayenne_lpp_add_relative_humidity(cayenne_lpp_t *lpp, uint8_t channel,
+                                       float rh)
 {
     assert((lpp->cursor + CAYENNE_LPP_RELATIVE_HUMIDITY_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -104,7 +112,8 @@ void cayenne_lpp_add_relative_humidity(cayenne_lpp_t *lpp, uint8_t channel, floa
     lpp->buffer[lpp->cursor++] = val;
 }
 
-void cayenne_lpp_add_accelerometer(cayenne_lpp_t *lpp, uint8_t channel, float x, float y, float z)
+void cayenne_lpp_add_accelerometer(cayenne_lpp_t *lpp, uint8_t channel,
+                                   float x, float y, float z)
 {
     assert((lpp->cursor + CAYENNE_LPP_ACCELEROMETER_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -122,7 +131,8 @@ void cayenne_lpp_add_accelerometer(cayenne_lpp_t *lpp, uint8_t channel, float x,
     lpp->buffer[lpp->cursor++] = vz;
 }
 
-void cayenne_lpp_add_barometric_pressure(cayenne_lpp_t *lpp, uint8_t channel, float hpa)
+void cayenne_lpp_add_barometric_pressure(cayenne_lpp_t *lpp, uint8_t channel,
+                                         float hpa)
 {
     assert((lpp->cursor + CAYENNE_LPP_BAROMETRIC_PRESSURE_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -133,7 +143,8 @@ void cayenne_lpp_add_barometric_pressure(cayenne_lpp_t *lpp, uint8_t channel, fl
     lpp->buffer[lpp->cursor++] = val;
 }
 
-void cayenne_lpp_add_gyrometer(cayenne_lpp_t *lpp, uint8_t channel, float x, float y, float z)
+void cayenne_lpp_add_gyrometer(cayenne_lpp_t *lpp, uint8_t channel, float x,
+                               float y, float z)
 {
     assert((lpp->cursor + CAYENNE_LPP_GYROMETER_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
@@ -151,7 +162,8 @@ void cayenne_lpp_add_gyrometer(cayenne_lpp_t *lpp, uint8_t channel, float x, flo
     lpp->buffer[lpp->cursor++] = vz;
 }
 
-void cayenne_lpp_add_gps(cayenne_lpp_t *lpp, uint8_t channel, float latitude, float longitude, float meters)
+void cayenne_lpp_add_gps(cayenne_lpp_t *lpp, uint8_t channel, float latitude,
+                         float longitude, float meters)
 {
     assert((lpp->cursor + CAYENNE_LPP_GPS_SIZE) < CAYENNE_LPP_MAX_BUFFER_SIZE);
 
