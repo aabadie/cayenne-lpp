@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/buildpack-deps
+      - image: riot/riotbuild
     steps:
       - checkout
       - run:
