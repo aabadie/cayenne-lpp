@@ -11,23 +11,14 @@ This library is adapted from
 See [the Cayenne LPP documentation](https://mydevices.com/cayenne/docs_stage/lora/#lora-cayenne-low-power-payload)
 for details on the payload format.
 
-## Build and run the test application
+## Build and run the example application
 
 Simply use `make`:
 
-    $ cd tests
-    $ make
-    $ ./test
-    Buffer 1:
-    01 67 00 E1 02 67 29 E2 03 68 55 04 65 01 2C 05 88 07 FD D8 00 BE E1 00 00 C8
-    ----------------------------------
-    Buffer 2:
-    01 00 2A 01 01 7B 01 02 00 01 01 03 00 05
-    ----------------------------------
-    Buffer 3:
-    01 66 01 03 71 01 F4 01 A4 00 64 04 86 00 1E 00 28 00 32
-    ----------------------------------
-    Empty buffer:
+    $ make && ./example/example
+    03 67 01 10 05 67 00 FF
+    01 67 FF D7 06 71 04 D2 FB 2E 00 00
+    01 88 06 76 5E F2 96 0A 00 03 E8
 
 ## Reference API
 

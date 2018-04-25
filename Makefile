@@ -1,12 +1,12 @@
-.PHONY: all test test-clean doc doc-clean
+.PHONY: all example example-clean doc doc-clean
 
-all: test
+all: example
 
-test:
-	CFLAGS=$(CFLAGS) make -C tests
+example:
+	CFLAGS=$(CFLAGS) make -C example
 
-test-clean:
-	make -C tests clean
+example-clean:
+	make -C example clean
 
 doc:
 	make -C doc
