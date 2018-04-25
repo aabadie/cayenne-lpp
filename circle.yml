@@ -9,7 +9,7 @@ jobs:
       - run:
           command: make
       - run:
-          command: tests/test
+          command: example/example
       - run:
           command: make doc
       - store_artifacts:
