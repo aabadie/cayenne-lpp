@@ -13,3 +13,7 @@ doc:
 
 doc-clean:
 	make -C doc clean
+
+check:
+	make -C tests
+	tests/check
