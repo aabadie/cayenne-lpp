@@ -16,4 +16,3 @@ doc-clean:
 
 check:
 	make -C tests
-	tests/check
