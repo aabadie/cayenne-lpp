@@ -1,6 +1,7 @@
 ## A Cayenne LPP library written in C
 
 [![CircleCI](https://circleci.com/gh/aabadie/cayenne-lpp/tree/master.svg?style=svg)](https://circleci.com/gh/aabadie/cayenne-lpp/tree/master) [![codecov](https://codecov.io/gh/aabadie/cayenne-lpp/branch/master/graph/badge.svg)](https://codecov.io/gh/aabadie/cayenne-lpp)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faabadie%2Fcayenne-lpp.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Faabadie%2Fcayenne-lpp?ref=badge_shield)
 
 This library provides functions for generating Cayenne LPP compatible payload.
 For example, the generated payloads can be used with LoRaWAN devices.
@@ -27,3 +28,6 @@ Read the reference API here: https://aabadie.github.io/cayenne-lpp
 ## License
 
 The library is licensed under LGPLv2.1.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faabadie%2Fcayenne-lpp.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Faabadie%2Fcayenne-lpp?ref=badge_large)
