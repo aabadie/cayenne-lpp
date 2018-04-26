@@ -3,13 +3,15 @@ version: 2
 jobs:
   build:
     docker:
-      - image: riot/riotbuild
+      - image: aabadie/cayenne-lpp
     steps:
       - checkout
       - run:
           command: make
       - run:
           command: example/example
+      - run:
+          command: make check
       - run:
           command: make doc
       - store_artifacts:
