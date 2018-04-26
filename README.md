@@ -27,3 +27,5 @@ Read the reference API here: https://aabadie.github.io/cayenne-lpp
 ## License
 
 The library is licensed under LGPLv2.1.
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Faabadie%2Fcayenne-lpp.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Faabadie%2Fcayenne-lpp?ref=badge_large)
