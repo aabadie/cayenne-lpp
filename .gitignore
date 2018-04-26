@@ -2,6 +2,9 @@
 example
 check
 
+*.html
+*.gc*
+
 .vscode/
 
 html/
