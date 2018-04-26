@@ -13,17 +13,17 @@ all: $(TARGET) run gcov
 check: check_cayenne_lpp.o cayenne_lpp.o
 	gcc *.o $(LDFLAGS) -o $(TARGET)
 
-check_cayenne_lpp.o: check_cayenne_lpp.c
+check_cayenne_lpp.o: *.c
 	gcc $(CFLAGS) -c $< -o $@
 
-cayenne_lpp.o: ../cayenne_lpp.c
+cayenne_lpp.o: ../*.c
 	gcc $(LFLAGS) $(CFLAGS) -c $< -o $@
 
 run:
 	$(CURDIR)/check
 
 gcov:
-	gcov ../cayenne_lpp.c --object-directory=$(CURDIR)
+	gcov ../*.c --object-directory=$(CURDIR)
 
 clean:
 	rm -f *.o *.gc* *.html $(TARGET)
