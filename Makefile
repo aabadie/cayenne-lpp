@@ -16,3 +16,6 @@ doc-clean:
 
 check:
 	make -C tests
+
+check-clean:
+	make -C tests clean
