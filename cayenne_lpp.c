@@ -138,7 +138,7 @@ void cayenne_lpp_add_barometric_pressure(cayenne_lpp_t *lpp, uint8_t channel,
 
     int16_t val = hpa * 10;
     lpp->buffer[lpp->cursor++] = channel;
-    lpp->buffer[lpp->cursor++] = CAYENNE_LPP_TEMPERATURE;
+    lpp->buffer[lpp->cursor++] = CAYENNE_LPP_BAROMETRIC_PRESSURE;
     lpp->buffer[lpp->cursor++] = val >> 8;
     lpp->buffer[lpp->cursor++] = val;
 }
