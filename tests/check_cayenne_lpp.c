@@ -117,7 +117,7 @@ START_TEST(test_cayenne_lpp_barometric_pressure)
 {
     cayenne_lpp_add_barometric_pressure(&lpp, 10, 996.23);
     ck_assert_int_eq(lpp.cursor, CAYENNE_LPP_BAROMETRIC_PRESSURE_SIZE);
-    char buffer[CAYENNE_LPP_BAROMETRIC_PRESSURE_SIZE] = { 0x0A, 0x67, 0x26, 0xEA };
+    char buffer[CAYENNE_LPP_BAROMETRIC_PRESSURE_SIZE] = { 0x0A, 0x73, 0x26, 0xEA };
     ck_assert_int_eq(memcmp(lpp.buffer,
                             buffer, CAYENNE_LPP_BAROMETRIC_PRESSURE_SIZE), 0);
 }
