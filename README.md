@@ -9,7 +9,7 @@ For example, the generated payloads can be used with LoRaWAN devices.
 This library is adapted from
 [the C++ version from MBED](https://developer.mbed.org/teams/myDevicesIoT/code/Cayenne-LPP/).
 
-See [the Cayenne LPP documentation](https://mydevices.com/cayenne/docs_stage/lora/#lora-cayenne-low-power-payload)
+See [the Cayenne LPP format documentation](https://docs.mydevices.com/docs/lorawan/cayenne-lpp)
 for details on the payload format.
 
 ## Build and run the example application
