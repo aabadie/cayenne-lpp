@@ -39,3 +39,8 @@ jobs:
       run: sudo apt-get install doxygen
     - name: Build documentation
       run: make doc
+    - name: Upload doc artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: doc
+        path: ./doc/html
