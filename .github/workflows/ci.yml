@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Build
+      run: make
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Install dependencies
+      run: sudo apt-get install check
+    - name: Run tests
+      run: make check
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        verbose: true
+
+  doc:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: Install Docygen
+      run: sudo apt-get install doxygen
+    - name: Build documentation
+      run: make doc
