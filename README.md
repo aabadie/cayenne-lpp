@@ -1,6 +1,7 @@
-## A Cayenne LPP library written in C
+[![CI][ci-badge]][ci-link]
+[![Coverage][codecov-badge]][codecov-link]
 
-[![CircleCI](https://circleci.com/gh/aabadie/cayenne-lpp/tree/master.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/aabadie/cayenne-lpp/tree/master) [![codecov](https://codecov.io/gh/aabadie/cayenne-lpp/branch/master/graph/badge.svg)](https://codecov.io/gh/aabadie/cayenne-lpp)
+## A Cayenne LPP library written in C
 
 This library provides functions for generating Cayenne LPP compatible payload.
 For example, the generated payloads can be used with LoRaWAN devices.
@@ -27,3 +28,8 @@ Read the reference API here: https://aabadie.github.io/cayenne-lpp
 ## License
 
 The library is licensed under LGPLv2.1.
+
+[ci-badge]: https://github.com/aabadie/cayenne-lpp/workflows/CI/badge.svg
+[ci-link]: https://github.com/aabadie/cayenne-lpp/actions?query=workflow%3ACI+branch%3Amain
+[codecov-badge]: https://codecov.io/gh/aabadie/cayenne-lpp/branch/main/graph/badge.svg
+[codecov-link]: https://codecov.io/gh/aabadie/cayenne-lpp
