@@ -1,4 +1,4 @@
-.PHONY: all example example-clean doc doc-clean
+.PHONY: all example example-clean doc doc-clean check check-clean
 
 all: example
 

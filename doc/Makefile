@@ -1,8 +1,6 @@
-.PHONY: all doc clean
+.PHONY: all clean
 
-all: doc-html
-
-doc-html:
+all:
 	doxygen $(CURDIR)/cayenne-lpp.doxyfile
 
 clean:

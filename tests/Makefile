@@ -6,7 +6,7 @@ CFLAGS += -I../ -fprofile-arcs -ftest-coverage
 LDFLAGS += -fprofile-arcs -ftest-coverage $(CHECK_LIBS)
 TARGET = check
 
-.PHONY: all
+.PHONY: all check run gcov clean
 
 all: $(TARGET) run gcov
 
